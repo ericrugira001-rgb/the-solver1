@@ -22,8 +22,8 @@
   transform: scale(0.97);
 }
 
-
 /* Sign Up Button */
+
 .signupbtn {
   padding: 12px 24px;
   border-radius: 12px;
@@ -45,6 +45,7 @@
 .signupbtn:active {
   transform: scale(0.97);
 }
+
 /* Input Field */
 .inputfield {
   width: 100%;
@@ -59,16 +60,19 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+
 /* Placeholder */
 .inputfield::placeholder {
   color: #9ca3af;
 }
+
 
 /* Focus State */
 .inputfield:focus {
   border-color: #6366f1;
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
 }
+
 
 /* Hover State */
 .inputfield:hover {
@@ -96,6 +100,7 @@ body {
 }
 
 /* Center the card */
+
 .container {
   height: 100vh;
   display: flex;
@@ -121,7 +126,9 @@ body {
   margin-bottom: 10px;
   color: #333;
 }
+
 /* Subtitle */
+
 .card p {
   color: #777;
   margin-bottom: 20px;
@@ -147,59 +154,36 @@ body {
 .signinbtn {
   width: 10%;
   margin-top: 15px;
-  margin: left 75px;
+  margin-left: 75%;
 }
-.card2 {
-  width: 350px;
-  padding: 30px;
-  margin:100px auto;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-  text-align: center;
+.lcss{
+  color:#00ffff rgb(0,255,255);
+  margin-top: 15px;
 }
-.container2 {
-
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-.card2 input:focus {
-  border-color: #6366f1;
-}
-.card2 p {
-  color: #777;
-  margin-bottom: 20px;
-}
-.card2 signinbtn{
-button {
-  background: linear-gradient(135deg, #6a5af9, #4a3df0);
+.lcss {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, hsl(232, 81%, 60%), #32287b);
   color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 12px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: 15%;
 }
 
-/* Hover effect */
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+/* Hover */
+.lcss:hover {
+  background: linear-gradient(135deg, #db2777, #ec4899);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
 }
 
-/* Click effect */
-button:active {
-  transform: scale(0.95);
+/* Click */
+.lcss:active {
+  transform: scale(0.96);
 }
-}
-.card2 input{
-  width: 340px;
-}
-select {
- width: 106%;
+.select {
+  width: 100%;
   padding: 12px 16px;
   border-radius: 12px;
   border: 1.5px solid #e5e7eb;
@@ -207,13 +191,21 @@ select {
   font-size: 14px;
   color: #111827;
   background: #ffffff;
+  cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 25px;
 }
 
-/* Focus effect */
+/* Hover */
+.select:hover {
+  border-color: #c7d2fe;
+}
 
-select:focus {
-  border-color: #6a5af9;
-  box-shadow: 0 0 5px rgba(106, 90, 249, 0.5);
+/* Focus */
+.select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+.select {
+  margin-top: 10px;
 }

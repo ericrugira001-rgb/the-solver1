@@ -1,45 +1,40 @@
 import Card from './components/ui/Card'
 import Input from './components/ui/Input'
-import Button from './components/UI/button'
-
+import Button from './components/ui/button'
+import Link from './components/ui/link';
+import Select from './components/ui/Select';
 function App() {
   return (
 <>
-<Button className="signinbtn" > signin </Button>
-<div card-container>
+
+<Button className="signinbtn" >signin</Button>
+
+<Link href='https://www.youtube.com/results?search_query=president+of+rwanda' className='lcss'>Home</Link>
+<Link href='https://www.youtube.com/watch?v=fBuIKUUzBDA' className='lcss'>About</Link>
+<Link href='https://camis.nesa.gov.rw/' className='lcss'>partners</Link>
+<Link href='https://www.kinyafilms.com/' className='lcss'>Movies</Link>
+<Link href='https://www.youtube.com/watch?v=K-oTqN3J_qQ' className='lcss'>Songs</Link>
+
+<Select className="select">
+<option value="">Country</option>
+<option value="1">Rwanda</option>
+<option value="">Burundi</option>
+<option value="">Uganda</option>
+<option value="">DRC Congo</option>
+<Link href='https://www.kinyafilms.com/' className='lcss'>Movies</Link>
+</Select>
+
 <div className='container'>
 <Card className="card">
 <h1>sign in</h1>
 <p>welcome back! please enter your details. </p>
-<div>
 <Input inputType="text" placeHolder="Names" cname="inputfield"/>
 <Input inputType="email" placeHolder="email" cname="inputfield"/>
-<Input inputType="password " placeHolder="Password" cname="inputfield"/>
+<Input inputType="password" placeHolder="Password" cname="inputfield"/>
 <Button className="signupbtn" > signup </Button>
-</div>
 </Card>
 </div>
-<div className='container2'>
-<card className="card2"> 
-  <h1>New card </h1>
-  <p> this is testing card</p>
-
-<Input inputType="text" placeHolder="Full names" cname="inputfield"/>
-<select name="inputfield" id="inputfield">
-<option value="1">Male</option>
-<option value="2">Female</option>
-<option value="3">both</option>
-</select>
-<Input inputType="text" placeHolder="school" cname="inputfield"/>
-<Input inputType="text" placeHolder="country" cname="inputfield"/>
-<Input inputType="text" placeHolder="province" cname="inputfield"/>
-<Input inputType="text" placeHolder="district" cname="inputfield"/>
-<Input inputType="text" placeHolder="sector" cname="inputfield"/>
-<Button className="signinbtn" > submit </Button>
-
-</card>
-</div>
-</div>
 </>
-)}
+);
+}
 export default App
